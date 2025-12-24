@@ -1,13 +1,13 @@
 <div class="titulo">Integração HTML</div>
 
-<h1>
+<h1 center>
     <?php
     echo 'Olá'; 
     echo '<small> Mundo! </small>';
     ?>
 </h1>
 
-<?= "<div>Outra Forma de me 'expressar'!</div>" ?>
+<?= "<div center azul>Outra Forma de me 'expressar'!</div>" ?>
 
 <br>
 
@@ -19,6 +19,19 @@
         font-weight: bold;
         border-radius: 10px;
     }
+
+    [center] {
+        display: flex;
+        justify-content: center;
+    }
+
+    [azul] {
+        color: #4286f4;
+    }
+
+    [dobro] {
+        font-size: <?= 10 - 8 ?>rem;
+    }
 </style>
 
-<div><button><?= "Legal" ?></button></div>
+<div center><button dobro><?= "Legal" ?></button></div>
