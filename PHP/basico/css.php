@@ -13,7 +13,7 @@
 
 <style>
     button {
-        padding: 5px 20px;
+        padding: 5px <?= 2 * 10 ?>px;
         background-color: #4286f4;
         color: #EEE;
         font-weight: bold;
